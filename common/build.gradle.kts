@@ -12,7 +12,9 @@ version = "1.0.0"
 
 @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
 kotlin {
-    android()
+    android {
+        publishAllLibraryVariants()
+    }
     jvm("desktop")
     ios()
     iosX64()
