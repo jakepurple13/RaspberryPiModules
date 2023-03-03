@@ -14,8 +14,15 @@ version = "1.0.0"
 kotlin {
     android {
         publishAllLibraryVariants()
+        compilations.all {
+            kotlinOptions.jvmTarget = "11"
+        }
     }
-    jvm("desktop")
+    jvm("desktop") {
+        compilations.all {
+            kotlinOptions.jvmTarget = "11"
+        }
+    }
     ios()
     iosX64()
     iosArm64()
