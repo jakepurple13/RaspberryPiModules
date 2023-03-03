@@ -4,10 +4,11 @@ plugins {
     id("com.android.library")
     kotlin("native.cocoapods")
     id("kotlinx-serialization")
+    id("maven-publish")
 }
 
-group = "com.programmersbox"
-version = "1.0-SNAPSHOT"
+group = "com.programmersbox.pimodules"
+version = "1.0.0"
 
 @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
 kotlin {

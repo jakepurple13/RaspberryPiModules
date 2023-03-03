@@ -1,9 +1,10 @@
 plugins {
     kotlin("jvm") version "1.8.0"
+    id("maven-publish")
 }
 
-group = "com.programmersbox"
-version = "1.0-SNAPSHOT"
+group = "com.programmersbox.serverlibraries"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
