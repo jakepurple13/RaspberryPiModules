@@ -106,3 +106,16 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 }
+
+publishing {
+    publications {
+        // Creates a Maven publication called "release".
+        register<MavenPublication>("release") {
+            // You can then customize attributes of the publication as shown below.
+            groupId = "com.github.jakepurple13"
+            artifactId = "pimodules"
+            version = "1.0.0"
+            afterEvaluate { from(components["release"]) }
+        }
+    }
+}
